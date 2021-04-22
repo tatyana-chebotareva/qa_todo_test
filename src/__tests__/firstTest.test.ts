@@ -19,15 +19,15 @@ You'll need to find the following 5 locators; the test will pass once they are a
 */
 
 // this is for the "What needs to be done?" input
-const todoInput: By = null;
+const todoInput: By = By.className("new-todo");
 // this locator will find ALL the todos
-const todos: By = null;
+const todos: By = By.className("view");
 // this locator will find the text of a todo FROM the todo
-const todoLabel: By = null;
+const todoLabel: By = By.css("label");
 // this locator will find the checkbox for the todo FROM the todo
-const todoComplete: By = null;
+const todoComplete: By = By.className("toggle");
 // this locator is for the "Clear complete" button in the corner
-const clearCompletedButton: By = null;
+const clearCompletedButton: By = By.className("clear-completed");
 
 test("the todo app can add, complete, and clear a todo", async () => {
   // 1. Load the page
